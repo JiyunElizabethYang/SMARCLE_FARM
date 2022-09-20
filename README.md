@@ -1,2 +1,2 @@
-# SMARCLE_FARM
-Smart_Farm__made_by__smarcle
+# SMARCLE_Farm
+Smart Farm made by SMARCLE
