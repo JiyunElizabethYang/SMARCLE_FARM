@@ -1,10 +1,9 @@
 # SMARCLE_Farm
 <Source_Code>
 '''arduino
-#define soilWet 500   // Define max value we consider soil 'wet'
-#define soilDry 750   // Define min value we consider soil 'dry'
+#define soilWet 500 
+#define soilDry 750
 
-// Sensor pins
 #define sensorPower 7
 #define sensorPin A0
 
