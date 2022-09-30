@@ -138,13 +138,9 @@ void servo_sw()    // 스위치, 편광필름
     Serial.println("sw Low");  
   }
 }
-
-
-void loop()  // 수분수위센서
+  
+void water_height() //수분수위 측정센서
 {
-  Serial.print("Analog Output: ");
-
-  int val = analogRead(A5);
   Serial.print("waterheight = ");
   Serial.println(val);
   if (val <= 400){
@@ -154,7 +150,17 @@ void loop()  // 수분수위센서
   else{
     digitalWrite(4, LOW);
   }
+ 
   
+}
+
+
+void loop()  // 수분수위센서
+{
+  Serial.print("Analog Output: ");
+
+  int val = analogRead(A5);
+  water_height();
   soilwet_func();
   dht_func();
   servo_sw();
